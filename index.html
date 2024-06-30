@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Media Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+        .phone-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .phone-profile {
+            height: 320px;
+            width: 300px;
+            border: 2px solid rgb(168, 11, 11);
+            border-radius: 12px;
+            box-shadow: 10px 0 10px 0 rgb(196, 104, 104);
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: auto;
+        }
+
+        .phone-img {
+            height: 220px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: end;
+        }
+
+        h1 {
+            font-family: "Trebuchet MS", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @media screen and (max-width: 600px) {
+            .phone-profile {
+                height: 320px;
+                width: 100%;
+                border: 2px solid rgb(168, 11, 11);
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            .phone-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .phone-profile {
+                height: 320px;
+                width: 300px;
+                border: 2px solid rgb(168, 11, 11);
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+
+
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .phone-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .phone-profile {
+                height: 320px;
+                width: 300px;
+                border: 2px solid rgb(168, 11, 11);
+                border-radius: 5px;
+                box-shadow: 10px 0 10px 0 rgb(196, 104, 104);
+                text-align: center;
+                margin-left: 70px;
+                margin-top: 20px;
+                margin-bottom: auto;
+            }
+        }
+
+
+
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            .phone-profile {
+                height: 320px;
+                width: 300px;
+                border:  2px solid rgb(168, 11, 11);
+                border-radius: 5px;
+                box-shadow: 10px 0 10px 0 rgb(196, 104, 104);
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1><b>Welcome Mobile Shop</b></h1>
+    <br>
+    <hr>
+    </div>
+    <div class="phone-container">
+
+        <div class="phone-profile">
+
+            <img src="samsung.webp" alt="samsung" width="250px" class="phone-img">
+
+            <div class="phone-info">
+                <h1>Samsung Galaxy</h1>
+            </div>
+        </div>
+        <div class="phone-profile">
+            <img src="i phone.webp" alt="i phone" width="200px" class="phone-img">
+            <div class="phone-info">
+                <h1>I Phone</h1>
+            </div>
+        </div>
+
+        <div class="phone-profile">
+            <img src="vivo.webp" alt="vivo" class="phone-img">
+            <div class="phone-info">
+                <h1>VIVO</h1>
+            </div>
+        </div>
+
+
+        <div class="phone-profile">
+            <img src="mi.jpg" alt="mi" width="230px" class="phone-img">
+            <div class="phone-info">
+                <h1>MI</h1>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
